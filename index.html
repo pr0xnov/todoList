@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Todo-list</title>
+  </head>
+  <body>
+    <div class="todo__container">
+      <h1 class="todo__container-title">Todo App</h1>
+      <div class="todo__app">
+        <input
+          class="todo__app-input"
+          type="text"
+          placeholder="Add your new todo"
+        />
+        <button class="todo__app-button-plus">
+          <i class="fa fa-plus"></i>
+        </button>
+      </div>
+      <ul class="todo__app-list"></ul>
+      <div class="todo__app-footer">
+        <span>You have <span class="todo__tasks">0</span> pending tasks</span>
+        <button class="todo__app-footer-button">Clear all</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

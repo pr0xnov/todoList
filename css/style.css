@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, lightgreen 0%, blue 100%);
+}
+.todo__container {
+  margin: 120px auto;
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  padding: 25px;
+}
+.todo__container-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.todo__app {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  margin: 20px 0;
+}
+.todo__app-input {
+  width: 85%;
+  height: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 17px;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+.todo__app-button-plus {
+  margin-left: 5px;
+  border-radius: 5px;
+  width: 60px;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  background: blueviolet;
+  color: #fff;
+  font-size: 22px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.todo__app-button-plus.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+/* .todo__app-list {
+  max-height: 275px;
+  overflow-y: auto;
+} */
+.todo__app-items {
+  position: relative;
+  list-style: none;
+  height: 50px;
+  line-height: 45px;
+  background: rgb(230, 228, 228);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 0 15px;
+}
+.todo__app-items span {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  background: red;
+  width: 60px;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  font-size: 22px;
+}
+.todo__app-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+.todo__app-footer-button {
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background: blueviolet;
+  color: #fff;
+  font-size: 22px;
+  padding: 5px 10px;
+}
